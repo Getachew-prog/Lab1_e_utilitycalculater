@@ -22,8 +22,7 @@ def calculate_bill(total_kwh):
          service_charge=42.00
          bill_amount=total_kwh * 2.4813
     else:
-        bill_amount=0
-    if bill_amount   
+        bill_amount=0   
     total_bill = bill_amount + service_charge
 
     print(f"Energy Charge: {bill_amount} ETB")
