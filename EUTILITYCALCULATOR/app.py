@@ -12,17 +12,14 @@ def main_menu():
         print("4. Exit")
 
         choice = input("Choose option: ")
-
         if choice == "1":
             print("\n1. Register Customer")
             print("2. List Customers")
             sub = input("Enter choice: ")
-
             if sub == "1":
                 register_customer()
             elif sub == "2":
                 list_customers()
-
         elif choice == "2":
             print("\n1. Register Appliance")
             print("2. List Appliances")
