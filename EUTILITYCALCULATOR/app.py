@@ -10,27 +10,25 @@ def main_menu():
         print("2. Appliance")
         print("3. Consumption & Bill")
         print("4. Exit")
-
-        choice = input("Choose option: ")
-        if choice == "1":
+        choice =int(input("Choose option: "))
+        if choice == 1:
             print("\n1. Register Customer")
             print("2. List Customers")
-            sub = input("Enter choice: ")
-            if sub == "1":
+            sub = int(input("Enter your choice: "))
+            if sub == 1:
                 register_customer()
-            elif sub == "2":
+            elif sub == 2:
                 list_customers()
-        elif choice == "2":
+        elif choice == 2:
             print("\n1. Register Appliance")
             print("2. List Appliances")
-            sub = input("Enter choice: ")
-
-            if sub == "1":
+            sub = int(input("Enter your choice: "))
+            if sub == 1:
                 register_appliance()
-            elif sub == "2":
+            elif sub == 2:
                 list_appliances()
 
-        elif choice == "3":
+        elif choice == 3:
             if not appliances:
                 print("No appliances added yet.\n")
                 continue
@@ -38,7 +36,7 @@ def main_menu():
             total_kwh = calculate_monthly_kwh(appliances)
             calculate_bill(total_kwh)
 
-        elif choice == "4":
+        elif choice == 4:
             print("Goodbye!")
             break
 
